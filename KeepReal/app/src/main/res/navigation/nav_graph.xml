@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.keepreal.fragment.HomeFragment"
+        android:label="首页"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_news_detection"
+        android:name="com.example.keepreal.fragment.NewsDetectionFragment"
+        android:label="新闻检测"
+        tools:layout="@layout/fragment_news_detection" />
+
+    <fragment
+        android:id="@+id/navigation_visualization"
+        android:name="com.example.keepreal.fragment.VisualizationFragment"
+        android:label="可视化"
+        tools:layout="@layout/fragment_visualization" />
+
+    <fragment
+        android:id="@+id/navigation_news_reading"
+        android:name="com.example.keepreal.fragment.NewsReadingFragment"
+        android:label="新闻阅读"
+        tools:layout="@layout/fragment_news_reading" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.keepreal.fragment.ProfileFragment"
+        android:label="个人主页"
+        tools:layout="@layout/fragment_profile" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.keepreal.activity.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.keepreal.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/forgetPasswordActivity2"
+        android:name="com.example.keepreal.activity.ForgetPasswordActivity"
+        android:label="activity_forget_password"
+        tools:layout="@layout/activity_forget_password" />
+    <activity
+        android:id="@+id/registerActivity"
+        android:name="com.example.keepreal.activity.RegisterActivity"
+        android:label="activity_register"
+        tools:layout="@layout/activity_register" />
+    <action
+        android:id="@+id/action_global_navigation_home"
+        app:popUpTo="@id/navigation_home" />
+
+</navigation>
